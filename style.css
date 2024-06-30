@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --color1: rgb(174, 0, 255);
+    --tran-01: all 0.2s ease;
+    --tran-02: all 0.5s ease;
+}
+
+body{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+}
+
+body .tlo{
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--tran-02);
+    background-image: url("image2.jpg");
+    background-size: 200%;
+    position: relative;
+}
+
+form h1{
+    position: absolute;
+    top: 10%;
+}
+
+.tlo form{
+    background: rgba(255, 255, 255, 0.645);
+    width: 15%;
+    height: 35%;
+    border-radius: 15px;
+    padding: 5vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--tran-02);
+    
+}
+
+form:hover{
+    box-shadow: 0px 5px 10px 10px rgba(255, 255, 255, 0.647);
+    width: 20%;
+    height: 40%;
+}
+
+form input{
+    height: 15%;
+    width: 75%;
+    font-size: 2.5vh;
+    border-radius: 20px;
+    border: bold;
+    border-color: rgb(68, 0, 97);
+    padding-left: 20px;
+    background: rgb(255, 255, 255);
+    margin-top: 2vh;
+    top: 20%;
+    position: relative;
+    transition: var(--tran-01)
+}
+
+input:hover{
+    width: 85%;
+}
+
+form input:hover{
+    opacity: 80%;
+    background: rgb(238, 232, 239);
+}
+
+form .button{
+    height: 8vh;
+    width: 8vw;
+    position: absolute;
+    transition: var(--tran-02);
+    color: rgba(0, 0, 0, 0.826);
+    padding-left: 0px;
+    margin-top: 0px;
+    top: 62%;
+    font-size: 2.5vh;
+    
+}
+
+.button:hover{
+    background:rgb(157, 0, 255);
+    color: white;
+    box-shadow: 0px 2px 0px 0px rgb(0, 0, 0);
+    width: 7vw;
+    height: 7vh;
+    transform: translate(0px, 15%);
+    opacity: 70%;
+}
+
+form a{
+   font-size: 2.25vh;
+   padding: 1vh 1vh;
+   position: absolute;
+   bottom: 5%;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
